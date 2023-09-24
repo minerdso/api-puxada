@@ -1,37 +1,70 @@
-# api-puxada
-#Faça ocê mesmo sua api de puxada e entenda com  meu codigo em nodejs
 
+```markdown
+# API de Puxada
 
-script-api-dados
-Codigo que escrevi em nodejs para mostrar como fazer suas próprias apis de puxar dados.
-Deixo bem claro que isso fiz para estudos sem fins lucrativos, apenas pra ensinar quem precisa, ja que ninguem faz pra turma faço eu.
-instalar vps
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+Este projeto demonstra como criar sua própria API para puxar dados usando Node.js. Este código foi criado para fins de estudo e não tem fins lucrativos. O objetivo é ensinar como criar uma API de puxada de dados.
 
-export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+## Instalação
 
-nvm install 16.14.1
+Para configurar o ambiente de desenvolvimento, siga estas etapas:
 
-nvm use 16.14.1
+1. Instale o Node.js com NVM:
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+   export NVM_DIR="$HOME/.nvm"
+   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+   nvm install 16.14.1
+   nvm use 16.14.1
+   ```
+2. Verifique se o Node.js foi instalado corretamente:
+   ```bash
+   node -v
+   ```
 
-node -v
+## Banco de Dados
 
-Banco que usei no projeto (achado na net)
-https://drive.google.com/file/d/1CCMN37G_xPuMy2sZ0CNKK9o5z1GPZsA1/view
+Utilizamos um banco de dados SQLite no projeto. Você pode baixá-lo [aqui](https://drive.google.com/file/d/1CCMN37G_xPuMy2sZ0CNKK9o5z1GPZsA1/view). Coloque o banco de dados dentro da pasta raiz do projeto.
 
-Dependencias para nodejs
-npm express sqlite3
+## Dependências do Node.js
 
-Banco de dados
-Baixa banco dentro da pasta raiz do bot seja ela qual for bele fio!!!!!
+Certifique-se de instalar as seguintes dependências Node.js para o projeto:
 
-PRONTO DA START - sh start.sh
+```bash
+npm install express sqlite3
+```
 
-EXEMPLO DE USO DA API
-http://ipVPS:8080/api/buscar-por-cpf?cpf=01065983336
+## Uso da API
 
-http://ipVPS:8080/api/buscar-por-nome?nome=MARCOS CAMARGO MACHADO http://ipVPS:8080/api/buscar-por-celular?celular=5521974250061
+A API oferece os seguintes endpoints:
 
-http://ipVPS:8080/api/buscar-por-telefone?telefone=5511974248005 http://ipVPS:8080/api/buscar-por-cns?cns=700804452297282
+- Para buscar por CPF:
+  ```
+  http://ipVPS:8080/api/buscar-por-cpf?cpf=01065983336
+  ```
 
-TENHA UM BONS ESTUDO FIO ISSO QUE TIO DESEJA.... BOTA PRA FUDER...... SO MANTEMOS O QUE TEMOS COMPARTILHANDO O QUE APRENDEMOS/SABEMOS
+- Para buscar por nome:
+  ```
+  http://ipVPS:8080/api/buscar-por-nome?nome=MARCOS%20CAMARGO%20MACHADO
+  ```
+
+- Para buscar por celular:
+  ```
+  http://ipVPS:8080/api/buscar-por-celular?celular=5521974250061
+  ```
+
+- Para buscar por telefone:
+  ```
+  http://ipVPS:8080/api/buscar-por-telefone?telefone=5511974248005
+  ```
+
+- Para buscar por CNS (Cartão Nacional de Saúde):
+  ```
+  http://ipVPS:8080/api/buscar-por-cns?cns=700804452297282
+  ```
+
+## Conclusão
+
+Este projeto é destinado a fins educacionais. Esperamos que você aproveite o aprendizado e continue compartilhando seu conhecimento com a comunidade. Lembre-se de que só mantemos o que temos compartilhando o que aprendemos.
+
+Bons estudos!
+```
